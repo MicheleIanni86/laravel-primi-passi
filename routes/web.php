@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $saluti = 'Helloooooooo World';
+    $speranza = 'Sembra che funzioni tutto!';
+
+    $puntiChiave = config('puntichiave');
+
+    return view('home', compact('saluti', 'speranza', 'puntiChiave'));
 });

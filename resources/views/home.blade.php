@@ -6,8 +6,13 @@
     <title>Home Laravel</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-5">Hello World</h1>
-    </div>
-</body>
+          <h1>{{ $saluti }}</h1>
+          <h2>{{ $speranza }}</h2>
+
+          <ul>
+            @foreach ($puntiChiave as $puntoChiave)
+                <li>{{ $puntoChiave }}</li>
+            @endforeach
+          </ul>
+ </body>
 </html>
